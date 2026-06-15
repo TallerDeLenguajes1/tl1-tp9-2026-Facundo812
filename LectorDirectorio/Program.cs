@@ -1,17 +1,17 @@
 ﻿using System;
 using System.IO;
 
-Console.WriteLine("Hello, World!");
+Console.Write("Ingrese el path del directorio que desea analizar: ");
+string path = Console.ReadLine();
 
-//Console.Write("Ingrese el path del directorio que desea analizar: ");
-//string path = Console.ReadLine();
-string path = @"C:\tp9\tl1-tp9-2026-Facundo812";
+//path para prueba
+//string path = @"C:\tp9\tl1-tp9-2026-Facundo812";
 
 //controlar que exista el path
-/*while(!Directory.Exists(path)){
+while(!Directory.Exists(path)){
     Console.Write("El directorio no existe, ingrese otro path: ");
     path = Console.ReadLine();
-}*/
+}
 
 string reporte = path + @"\reporte_archivos.csv";
 
